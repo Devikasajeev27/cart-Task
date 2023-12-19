@@ -1,0 +1,159 @@
+/* AUTHOR: DEVIKA S KUMAR 
+DATE: 19 DEC 2023*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.styled-container {
+    display: flex;
+    align-items: center;
+    width: 44%;
+}
+
+.solid-line {
+    flex: 1;
+    height: 2px; 
+    background-color: #ccc;  
+}
+
+.styled-text {
+    /* font-weight: bold;  */
+    font-size: 20px;
+    color: #009900;
+    padding: 10px 20px;
+}
+
+.box {
+    width: 40%;
+    padding: 20px;
+    margin: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.box:hover {
+    border-color: #05a805;
+}
+
+.box.selected {
+    border-color: #05a805;
+    background-color: #e5f7e5;
+}
+
+.column {
+    float: left;
+    padding: 5px;
+    margin-left: 15px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+.labels {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.labels .discount-label {
+    color: black;
+    align-self: flex-end;
+    margin-left: 10px;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #777;
+    padding-top: 15px;
+    font-size: 12px;
+}
+
+.labels .most-popular {
+    font-weight: bold;
+    margin-left: 10px;
+    color: #05a805;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 25px;
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: o;
+}
+
+.options {
+    display: none;
+}
+
+.options label {
+    display: block;
+    margin: 0px 0px 0px 35px;
+}
+
+.size{
+    display:flex; 
+    align-items: center; 
+    margin-left: 10px;
+}
+
+.colour{
+    display:flex; 
+    align-items: center;
+    margin-left: 58px;
+}
+
+.select {
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+}
+
+select{
+    width: 80px;
+    height: 25px;
+}
+
+#addToCart {
+    margin-top: 20px;
+    background-color:#009900;
+    color: #fff;
+    padding:20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 44%;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#poweredBy {
+    margin-top: 10px;
+    color: #777;
+    display: flex;
+    justify-content: flex-end;
+    width: 44%;
+}
